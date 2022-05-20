@@ -1,0 +1,19 @@
+.checkbox {
+    background-color: black;
+    font-size: x-large;
+
+}
+
+.spanClassName {
+    font-size: x-large;
+    text-shadow: 1px 1px 1px silver,
+    -1px 1px 1px silver;
+    color: white;
+    transition: all .5s;
+}
+
+.spanClassName:hover {
+    text-shadow: -1px -1px 1px silver,
+    1px -1px 1px silver;
+    color: white;
+}

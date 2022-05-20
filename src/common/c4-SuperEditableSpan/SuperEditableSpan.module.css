@@ -1,0 +1,9 @@
+.span {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: darkred;
+    height: 56px;
+    font-weight: bolder;
+    font-size: x-large;
+}
