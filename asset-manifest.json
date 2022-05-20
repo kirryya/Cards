@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/Cards/static/js/main.6a5a6c91.js",
+    "static/js/787.d7763fec.chunk.js": "/Cards/static/js/787.d7763fec.chunk.js",
+    "index.html": "/Cards/index.html",
+    "main.6a5a6c91.js.map": "/Cards/static/js/main.6a5a6c91.js.map",
+    "787.d7763fec.chunk.js.map": "/Cards/static/js/787.d7763fec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6a5a6c91.js"
+  ]
+}
