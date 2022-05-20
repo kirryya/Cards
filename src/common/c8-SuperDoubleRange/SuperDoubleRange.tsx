@@ -1,21 +1,27 @@
+import * as React from 'react';
 import Box from '@mui/material/Box';
-import React from 'react'
-import Slider from "@mui/material/Slider";
+import Slider from '@mui/material/Slider';
 
-type SuperDoubleRangePropsType = {
-    handleChange: (event: Event, newValue: number | number[]) => void
-    value: [number, number]
+function valuetext(value: number) {
+    return `${value}°C`;
 }
 
-export function SuperDoubleRange(props: SuperDoubleRangePropsType) {
+export function SuperDoubleRange() {
+    const [value, setValue] = React.useState<number[]>([20, 37]);
+
+    const handleChange = (event: Event, newValue: number | number[]) => {
+        setValue(newValue as number[]);
+    };
 
     return (
-        <Box sx={{width: 200}}>
+        <Box sx={{ width: 300 }}>
             <Slider
-                value={props.value}
-                onChange={props.handleChange}
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+                getAriaValueText={valuetext}
             />
         </Box>
     );
-
 }
